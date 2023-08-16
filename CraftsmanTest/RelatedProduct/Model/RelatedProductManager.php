@@ -98,7 +98,7 @@ class RelatedProductManager implements RelatedProductManagerInterface
             $this->logger->info($e->getMessage());
         }
 
-        return $message;
+        return (string)$message;
     }
 
     /**
