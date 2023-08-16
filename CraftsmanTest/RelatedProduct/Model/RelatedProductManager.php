@@ -32,8 +32,7 @@ class RelatedProductManager implements RelatedProductManagerInterface
     ) {}
 
     /**
-     * @param int $productId
-     * @return bool
+     * @inheritdoc
      */
     public function hasProductDependency(int $productId): bool
     {
@@ -80,8 +79,7 @@ class RelatedProductManager implements RelatedProductManagerInterface
     }
 
     /**
-     * @param int $productId
-     * @return string
+     * @inheritdoc
      */
     public function getDependencyMessage(int $productId): string
     {
