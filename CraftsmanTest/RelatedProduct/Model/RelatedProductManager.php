@@ -39,7 +39,7 @@ class RelatedProductManager implements RelatedProductManagerInterface
     {
         $product = $this->getProduct($productId);
 
-        return $product->getCustomAttribute(DependencyInformationInterface::PRODUCT_ATTRIBUTE_HAS_DEPENDENCY)->getValue();
+        return (bool)$product->getCustomAttribute(DependencyInformationInterface::PRODUCT_ATTRIBUTE_HAS_DEPENDENCY)->getValue();
     }
 
     /**
