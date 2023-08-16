@@ -1,4 +1,4 @@
-<?php declare(strict_types=1);
+<?php
 /**
  * Craftsman Test. All rights reserved.
  * See COPYING.txt for license details.
