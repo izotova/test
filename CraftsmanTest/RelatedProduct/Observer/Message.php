@@ -35,9 +35,10 @@ class Message implements ObserverInterface
     {
         $productId = $this->request->getParam('product');
     
-        if ($this->relatedManager->hasProductDependency($productId))
+        if ($this->relatedManager->hasProductDependency($productId)) {
             $this->managerMessage->addSuccessMessage(
                 $this->relatedManager->getDependencyMessage($productId)
             );
+        }
     }
 }
